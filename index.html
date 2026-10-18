@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meus Produtos</title>
+<meta name="theme-color" content="#DBFAE3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14201a" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Produtos">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1 id="titulo">Meus produtos</h1>
+  <button id="btnNovo" class="icon-btn" aria-label="Adicionar produto">＋</button>
+</header>
+<main id="app"></main>
+<nav class="tabs">
+  <a href="#lista" data-tab="lista"><span>☰</span>Lista</a>
+  <a href="#usar" data-tab="usar"><span>⏳</span>Usar logo</a>
+  <a href="#comprar" data-tab="comprar"><span>🏷️</span>Promoção</a>
+  <a href="#config" data-tab="config"><span>⚙︎</span>Ajustes</a>
+</nav>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="config.js"></script>
+<script src="seed.js"></script>
+<script src="sync.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
